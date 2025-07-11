@@ -61,10 +61,12 @@ const openingTimes = {
 const pageTitle = "Harlands Hair Salon";
 const secondaryTitle = "Acomb - York"
 
-const mainBackgroundImage = "url(https://images.unsplash.com/photo-1587045525473-4861b1f9b5b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D_)";
- "url(https://images.unsplash.com/photo-1595475884562-073c30d45670?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
+const templateName = "harlandshair";
 
-"url(https://images.unsplash.com/photo-1599351430140-c70f0250bd70?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
+const mainBackgroundImage = `url(/${templateName}/hairbackground.jpg)`;
+//"url(https://images.unsplash.com/photo-1587045525473-4861b1f9b5b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D_)";
+//  "url(https://images.unsplash.com/photo-1595475884562-073c30d45670?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
+ //"url(https://images.unsplash.com/photo-1599351430140-c70f0250bd70?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
 
 const number = "01904 785926";
 
@@ -73,7 +75,6 @@ const googleMap =
 
 const shadowOffset = 2;
 
-const templateName = "harlandshair";
 
 const collageUrl = `url(/${templateName}/harlandsCollage.jpg)`;
 
