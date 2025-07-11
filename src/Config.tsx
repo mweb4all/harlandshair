@@ -1,7 +1,6 @@
 import {
   AppBar,
   Box,
-  Button,
   Stack,
   Table,
   TableBody,
@@ -14,17 +13,14 @@ import {
 } from "@mui/material";
 import { useRef } from "react";
 import { Helmet } from "react-helmet";
-import { TrioCarousel } from "./components/TrioCarousel";
 import { Copyright } from "./components/Copyright";
 import { SocialMediaProps, SocialMedia } from "./components/SocialMedia";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { rem } from "polished";
 import { ContactUsForm } from "./components/ContactUsForm";
-import { black, blue, cream } from "./components/Colours";
+import { black, cream } from "./components/Colours";
 import { LinkButton } from "./components/LinkButton";
 import { useState, useEffect } from "react";
-import ReactLoading from 'react-loading';
-
 // michael.web4all@gmail.com
 
 const welcomeMessage = "Welcome to Harlands Hair Salon";
@@ -70,20 +66,16 @@ const mainBackgroundImage = "url(https://images.unsplash.com/photo-1587045525473
 
 "url(https://images.unsplash.com/photo-1599351430140-c70f0250bd70?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)";
 
-const carouselImages = [
-  "/harlandshair1.jpg",
-  "/harlandstudio.jpg",
-  "/harlandshair2.jpg",
-  "/harlandsMain.jpg",
-  "/harlandshair3.jpg",
-];
-
 const number = "01904 785926";
 
 const googleMap =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.8939286995587!2d-1.1184421000000002!3d53.951391799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793120de033f53%3A0xf59f6c43edee450c!2s225A%20Hamilton%20Dr%20W%2C%20Acomb%2C%20York%20YO24%204PL!5e0!3m2!1sen!2suk!4v1745663389784!5m2!1sen!2suk";
 
 const shadowOffset = 2;
+
+const templateName = "harlandshair";
+
+const collageUrl = `url(/${templateName}/harlandsCollage.jpg)`;
 
 export const Config = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -324,22 +316,11 @@ export const Config = () => {
             my: 1,
             width: {xs: "80%", lg: "1200px"},
             aspectRatio: "2 / 0.8",
-            backgroundImage: `url(/template/harlandsCollage.jpg)`,
+            backgroundImage: collageUrl,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         ></Box>
-        {/* <Box
-          sx={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            my: 3,
-          }}
-        >
-          <TrioCarousel carouselImages={carouselImages} />
-        </Box> */}
-
         <Stack
           ref={contactSectionRef}
           sx={{
